@@ -7,10 +7,10 @@ block content
     ul#notes
       each note in notes
         li
-          div= note.text
-          button.delete-btn(type="button" data-id=note.id) Delete
-          button.edit-btn(type="button" data-id=note.id) Save
+          div(contenteditable="true" class="note-text")= note.text
+          button.delete-btn(type="button", data-id=note.id) Delete
+          button.edit-btn(type="button", data-id=note.id) Save
 
-    form(method="POST" action="notes")
-      input(type="text", name="noteText", placeholder="Add a new note here!")
+    form(method="POST", action="notes", id="addNoteForm")
+      input(type="text", name="noteText", placeholder="Add a new note here!" class="inputNote" )
       button(type="submit") Add Note

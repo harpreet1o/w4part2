@@ -5,6 +5,7 @@ let _notes = [
   
   // TODO: implement addNote and removeNote
   // For fun: why do we export a function instead of notes directly?
+  // to implement abstraction
   const notes = () => _notes;
   function addNote(note){
     _notes.push(note);

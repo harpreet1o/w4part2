@@ -1,0 +1,30 @@
+body{
+    font-family:monospace;
+    font-size: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EAD5E6;
+    color:#685F74;
+}
+.note-text{
+    width:300px;
+    margin-bottom:10px;
+}
+li{
+    list-style-type: none;
+    margin-bottom:25px;
+}
+button, .inputNote{
+margin:2px 2px;
+border-radius:6px;
+padding:4px 10px;
+border:#CA9CE1 2px solid;
+font-size: 16px;
+color:#685F74;
+
+}
+h1{
+   color:#995FA3;
+}
